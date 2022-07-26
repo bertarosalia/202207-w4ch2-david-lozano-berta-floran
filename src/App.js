@@ -8,16 +8,17 @@ import UsedLetters from "./components/UsedLetters/UsedLetters";
 
 function App() {
   const usedLettersArray = ["A", "B", "C", "D"];
+  const numberOfMistakes = 7;
   const [word, setWord] = useState([]);
+
   const randomWordUrl =
-    "https://palabras-aleatorias-public-api.herokuapp.com/random";
+    "https://clientes.api.greenborn.com.ar/public-random-word";
 
   const randomWord = async () => {
     const response = await fetch(randomWordUrl);
     const randomWordUrlJson = await response.json();
-    const randomWordUrlJsonSplited = randomWordUrlJson.body.Word.normalize(
-      "NFD"
-    )
+
+    const randomWordUrlJsonSplited = randomWordUrlJson[0]
       .replace(/([aeio])\u0301|(u)[\u0301\u0308]/gi, "$1$2")
       .normalize()
       .split("");
@@ -38,7 +39,7 @@ function App() {
       <div className="container">
         <div className="main-container">
           <UsedLetters props={usedLettersArray} />
-          <Hangman />
+          <Hangman numberOfMistakes={numberOfMistakes} />
         </div>
         <GuessLetters />
         <Result />
