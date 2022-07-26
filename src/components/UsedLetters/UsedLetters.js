@@ -6,7 +6,9 @@ const UsedLetters = ({ props }) => {
       <h2>Used letters</h2>
       <ul className="used-letters">
         {props.map((prop) => (
-          <li className="used-letter">{prop},&nbsp;</li>
+          <li className="used-letter" key={prop}>
+            {prop},&nbsp;
+          </li>
         ))}
       </ul>
     </section>

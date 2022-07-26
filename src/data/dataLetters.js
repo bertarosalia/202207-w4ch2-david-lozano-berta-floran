@@ -1,0 +1,56 @@
+const dataLetters = [
+  {
+    id: 1,
+    value: "A",
+    isUsed: false,
+  },
+  {
+    id: 2,
+    value: "B",
+    isUsed: false,
+  },
+  {
+    id: 3,
+    value: "C",
+    isUsed: false,
+  },
+  {
+    id: 4,
+    value: "D",
+    isUsed: false,
+  },
+  {
+    id: 5,
+    value: "F",
+    isUsed: false,
+  },
+  {
+    id: 6,
+    value: "E",
+    isUsed: false,
+  },
+  { id: 7, value: "F", isUsed: false },
+  { id: 8, value: "G", isUsed: false },
+  { id: 9, value: "H", isUsed: false },
+  { id: 10, value: "I", isUsed: false },
+  { id: 11, value: "J", isUsed: false },
+  { id: 12, value: "K", isUsed: false },
+  { id: 13, value: "L", isUsed: false },
+  { id: 14, value: "M", isUsed: false },
+  { id: 15, value: "N", isUsed: false },
+  { id: 16, value: "Ñ", isUsed: false },
+  { id: 17, value: "O", isUsed: false },
+  { id: 18, value: "P", isUsed: false },
+  { id: 19, value: "Q", isUsed: false },
+  { id: 20, value: "R", isUsed: false },
+  { id: 21, value: "S", isUsed: false },
+  { id: 22, value: "T", isUsed: false },
+  { id: 23, value: "U", isUsed: false },
+  { id: 23, value: "V", isUsed: false },
+  { id: 24, value: "W", isUsed: false },
+  { id: 25, value: "X", isUsed: false },
+  { id: 26, value: "Y", isUsed: false },
+  { id: 27, value: "Z", isUsed: false },
+];
+
+export default dataLetters;
