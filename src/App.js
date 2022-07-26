@@ -7,6 +7,7 @@ import Result from "./components/Result/Result";
 import UsedLetters from "./components/UsedLetters/UsedLetters";
 
 function App() {
+  const usedLettersArray = ["A", "B", "C", "D"];
   const [word, setWord] = useState([]);
 
   const randomWordUrl =
@@ -37,7 +38,7 @@ function App() {
     <>
       <div className="container">
         <div className="main-container">
-          <UsedLetters />
+          <UsedLetters props={usedLettersArray} />
           <Hangman />
         </div>
         <GuessLetters />
