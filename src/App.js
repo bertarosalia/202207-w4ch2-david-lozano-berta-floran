@@ -9,7 +9,6 @@ import UsedLetters from "./components/UsedLetters/UsedLetters";
 function App() {
   const usedLettersArray = ["A", "B", "C", "D"];
   const [word, setWord] = useState([]);
-
   const randomWordUrl =
     "https://palabras-aleatorias-public-api.herokuapp.com/random";
 
