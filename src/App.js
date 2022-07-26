@@ -27,6 +27,8 @@ function App() {
     return randomWordUrlJson;
   };
 
+  (() => word)();
+
   useEffect(() => {
     randomWord();
   }, [randomWordUrl]);
