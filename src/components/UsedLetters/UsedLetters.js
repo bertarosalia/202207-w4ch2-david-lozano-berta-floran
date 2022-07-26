@@ -1,14 +1,12 @@
 import "./UsedLetters.css";
 
-const UsedLetters = () => {
-  const usedLettersArray = ["A", "B", "C", "D"];
-
+const UsedLetters = ({ props }) => {
   return (
     <section className="used-letters-container">
       <h2>Used letters</h2>
       <ul className="used-letters">
-        {usedLettersArray.map((usedLetter) => (
-          <li className="used-letter">{usedLetter},&nbsp;</li>
+        {props.map((prop) => (
+          <li className="used-letter">{prop},&nbsp;</li>
         ))}
       </ul>
     </section>
